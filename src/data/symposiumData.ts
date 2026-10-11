@@ -79,7 +79,7 @@ export const SITE_CONFIG: SiteConfig = {
       image: "/assets/office-bearers/prithviraj.jpeg"
     }
   ],
-  email: "orkestrim2k26@gmail.com"
+  email: "srmvec.orkestrim2k26@gmail.com"
 };
 
 export const OFFICIAL_EVENTS: SymposiumEvent[] = [
@@ -87,7 +87,7 @@ export const OFFICIAL_EVENTS: SymposiumEvent[] = [
     id: "paper-spark",
     name: "Paper Fusion",
     episode: "Episode 01",
-    tagline: "Present breakthrough research papers and defend innovative technical paradigms.",
+    tagline: "Crack the clues, Outsmart the unknown, Break the limits!",
     genre: "Paper Presentation • Research • Defense",
     category: "presentation",
     rating: "U/A 16+",
@@ -95,23 +95,24 @@ export const OFFICIAL_EVENTS: SymposiumEvent[] = [
     badge: "#1 IN RESEARCH",
     matchScore: 98,
     date: "31 Oct 2026",
-    time: "Morning Session",
+    time: "10:45 am - 12:30 pm",
     venue: "Dept of EIE, 10th floor, New Building",
     teamSize: "2 to 4 Members",
     fee: "Rs.200/head",
     description: "Paper theory spaarks the budding researchers to gather insight on their ideas pitched - on any category - from faculties",
     rules: [
-      "Round 1: THE HYPOTHESIS : Teams should submit abstract on or before 26th Oct. Abstract submission must adhere to standard IEEE 2-column format (max 6 pages). The best team moves forward.",
-      "Round 2: THE NOBEL MOMENT : Shortlisted teams will present their full paper to our faculties and winners are announced."
+      "Round 1: THE HYPOTHESIS : This takes place online. Teams should submit abstract on or before 26th Oct through the registration form. Abstract submission must adhere to one page explanation. The best team moves forward.",
+      "Round 2: THE NOBEL MOMENT :This takes place offline. Shortlisted teams will present their full paper to our faculties and winners are announced. Each team gets a maxinum of 10 minutes to present.",
+      "Please do join the Whatsapp group provided in the registration form for further updates on the event."
     ],
     highlight: `Submitted papers must be related to one or more of the following technical domains:
-Internet of Things(IoT)
-Embedded Systems
-Instrumentation and Control Systems
-Robotics and Automation
-Artificial Intelligence and Machine Learning
-Sensors and Transducers
-Industrial Automation`,
+  Internet of Things(IoT)
+  Embedded Systems
+  Instrumentation and Control Systems
+  Robotics and Automation
+  Sensors and Transducers
+  Control Systems and Industrial Automation
+  Other Technical Domains`,
     coordinator: {
       name: "Sreeja RK",
       phone: "+91 9345886898",
@@ -124,9 +125,9 @@ Industrial Automation`,
   },
   {
     id: "brainiacs-battle",
-    name: "CASHFLIX",
+    name: "CLASHFLIX",
     episode: "Episode 02",
-    tagline: "High-intensity technical quiz testing algorithmic speed, core concepts, and trivia mastery.",
+    tagline: "Sometimes ,a truce is the most important part of a war.",
     genre: "Tech Quiz • Rapid Fire • Trivia",
     category: "strategy",
     rating: "U/A 16+",
@@ -134,15 +135,15 @@ Industrial Automation`,
     badge: "#2 IN STRATEGY",
     matchScore: 96,
     date: "31 Oct 2026",
-    time: "Morning Session",
+    time: "10:45 am - 12:30 pm",
     venue: "Dept of EIE, 10th floor, New Building",
-    teamSize: "2-3 Members",
+    teamSize: "2 Members",
     fee: "Rs.200/head",
     description: "Train your brain to battle out the wrong and confusing options to crack the right ones via MCQ's, planning and capturing the hint to unlock the final vault!",
     rules: [
-      "Round 1: DIGITAL VAULT : Enter the vault and crack a series of technical MCQ's through an online quiz platform. Accuracy and speed will determine who advanced to the next stage of the heist. ",
+      "Round 1: DIGITAL VAULT : Enter the vault and crack a series of 20 technical MCQ's through an online quiz platform. Accuracy and speed will determine who advanced to the next stage of the heist. ",
       "Round 2: THE MASTER PLAN : Put your Electronics and Instrumentation knowledge to the test in a written technical quiz. Analyze, think strategically and answer your way closer to the treasure.",
-      "Round 3: THE FINAL CLUE: Put your technical knowledge to the test with three intriguing clues describing a mystery component or concept. Listen carefully, connect the hints and identify the correct answer. Only the sharpest minds will crack the clues and unlock the final vault!.",
+      "Round 3: THE FINAL CLUE: Put your technical knowledge to the test with intriguing clues describing a mystery component or concept. Listen carefully, connect the hints and identify the correct answer. Only the sharpest minds will crack the clues and unlock the final vault!.",
     ],
     coordinator: {
       name: "A. Vijay",
@@ -156,7 +157,7 @@ Industrial Automation`,
     id: "techno-connect",
     name: "Beyond Limits",
     episode: "Episode 03",
-    tagline: "Connect cryptic visual clues, decode hidden tech brands, algorithms, and technical paradigms.",
+    tagline: "Enter the Hawkins. Challange the unknown. Survive the Upside Down!",
     genre: "Connection • Deduction • Visual Logic",
     category: "strategy",
     rating: "U/A 16+",
@@ -164,13 +165,13 @@ Industrial Automation`,
     badge: "#3 IN DEDUCTION",
     matchScore: 95,
     date: "31 Oct 2026",
-    time: "Afternoon Session",
+    time: "2:00 pm to 4:00 pm",
     venue: "Dept of EIE, 10th floor, New Building",
     teamSize: "2-3 Members",
     fee: "Rs.200/head",
     description: "An exhilarating visual connection battle inspired by classic lateral puzzle showdowns. Identify underlying software design patterns, famous founders, obscure tech acquisitions, programming keywords, and logos pieced together from seemingly unrelated imagery.",
     rules: [
-      "Teams consist of 2 members.",
+      "Teams consist of 2-3 members.",
       "Round 1: Pen and paper prelims consisting of 25 connection slides.",
       "Round 2: Stage finals with 4 teams tackling tiered visual connection boards with clue-based point multipliers.",
       "Early answers receive higher bonus points; wrong guesses on buzzer deduct points.",
@@ -188,7 +189,7 @@ Industrial Automation`,
     id: "techno-ads",
     name: "BrandBlitz",
     episode: "Episode 04",
-    tagline: "Market futuristic prototypes and craft the ultimate technical sales pitch.",
+    tagline: "Sell it like your life depends on it.",
     genre: "Creative Pitch • Marketing • Ad-Mad",
     category: "nontech",
     rating: "U/A 16+",
@@ -196,13 +197,13 @@ Industrial Automation`,
     badge: "#4 IN CREATIVITY",
     matchScore: 94,
     date: "31 Oct 2026",
-    time: "Afternoon Session",
+    time: "2:00 pm to 4:00 pm",
     venue: "Dept of EIE, 10th floor, New Building",
-    teamSize: "3 to 5 Members",
+    teamSize: "2 to 3 Members",
     fee: "Rs.200/head",
     description: "Techno Ads merges theatrical comedy, engineering insight, and advertising brilliance. Teams are assigned unconventional futuristic gadgets or software ideas and must construct a compelling 3-minute live commercial advertisement that captivates both judges and audience.",
     rules: [
-      "Teams of 3 to 5 members.",
+      "Teams of 2 to 3 members.",
       "Topic/product will be assigned on the spot with 10 minutes preparation time.",
       "Performance time: 3 to 4 minutes on stage.",
       "Judging criteria: Creativity, humor, technical coherence, teamwork, and audience engagement.",
@@ -220,7 +221,7 @@ Industrial Automation`,
     id: "techno-treasure",
     name: "The Voyage X",
     episode: "Episode 05",
-    tagline: "Crack algorithmic ciphers and race across campus to unearth the hidden payload.",
+    tagline: "The hunt for the One piece begins!",
     genre: "Campus Hunt • Cryptic Clues • Adventure",
     category: "nontech",
     rating: "U/A 16+",
@@ -230,11 +231,11 @@ Industrial Automation`,
     date: "31 Oct 2026",
     time: "Afternoon Session",
     venue: "Dept of EIE, 10th floor, New Building",
-    teamSize: "3 to 4 Members",
+    teamSize: "2 Members",
     fee: "Rs.200/head",
     description: "Turn on the detective cap and get a few instructions from Sherlock Holmes because here we hide treasures across campus in tricky places for a clue to riddles and enjoy the treasure.",
     rules: [
-      "Teams must have 3 to 4 members who stay together throughout the hunt.",
+      "Teams must have 2 members who stay together throughout the hunt.",
       "Round 1: Puzzle or connecting images are given to the team to crack it and next team sails forward.",
       "Round 2: 5-6 treasures are hidden in different places across campus like in a balloon, under a a desk, in a book, etc. Riddles locates clues and treasures are collected. The team that collects all treasures grabs the 1st spot.",
     ],
