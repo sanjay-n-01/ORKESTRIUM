@@ -86,9 +86,17 @@ export const ScheduleSection: React.FC<ScheduleSectionProps> = ({ site, onShowTo
               </div>
 
               {/* Ep Thumbnail Preview */}
-              <div className="relative w-full sm:w-36 h-20 rounded bg-gradient-to-br from-neutral-800 to-neutral-900 border border-white/10 flex items-center justify-center shrink-0 overflow-hidden">
-                <Clapperboard className="w-6 h-6 text-neutral-400 group-hover:text-amber-500 transition-colors" />
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="relative w-full sm:w-36 h-20 rounded bg-gradient-to-br from-neutral-900 to-[#121212] border border-white/10 flex items-center justify-center shrink-0 overflow-hidden p-2 group-hover:border-[#E50914]/50 transition-colors">
+                {ep.icon ? (
+                  <img
+                    src={ep.icon}
+                    alt={ep.title}
+                    className="w-12 h-12 object-contain drop-shadow-[0_4px_12px_rgba(0,0,0,0.6)] group-hover:scale-110 transition-transform duration-300"
+                  />
+                ) : (
+                  <Clapperboard className="w-7 h-7 text-neutral-400 group-hover:text-amber-500 transition-colors" />
+                )}
+                <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                   <Play className="w-6 h-6 text-[#E50914] fill-current" />
                 </div>
               </div>

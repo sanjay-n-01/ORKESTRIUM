@@ -11,34 +11,29 @@ export const CrewSection: React.FC<{ site: SiteConfig }> = ({ site }) => {
   // Subsection 1: Staff Coordinators (Faculty & Patrons)
   const staffSlides: Slide[] = [
     {
-      title: "Dr. K. Elangovan",
-      caption: "Patron & Head of Department • Department of Computer Science & Engineering",
-      image: unsplash("1472099645785-5658abf4ff4e"),
+      title: "Dr. M. Banu Sundareswari",
+      caption: "HOD & Convener • Associate Professor, Dept of EIE",
+      image: "/assets/staff_coordinators/banusundareshwari.png",
     },
     {
-      title: "Dr. B. Chidambararajan",
-      caption: "Chief Patron & Principal • SRM Valliammai Engineering College",
-      image: unsplash("1507003211169-0a1dd7228f2d"),
+      title: "Ms. M. Shanthi",
+      caption: "Staff Coordinator • Assistant Professor (Sr.G), Dept of EIE",
+      image: "/assets/staff_coordinators/shanthi.png",
     },
     {
-      title: "Dr. M. Senthil Kumar",
-      caption: "Staff Convener & Professor • Department of CSE",
-      image: unsplash("1500648767791-00dcc994a43e"),
+      title: "Dr. M. Joe Marshell",
+      caption: "Staff Coordinator • Assistant Professor (Sr.G), Dept of EIE",
+      image: "/assets/staff_coordinators/joe_marshall.png",
     },
     {
-      title: "Dr. A. R. Revathi",
-      caption: "Staff Co-Convener & Associate Professor • Department of CSE",
-      image: unsplash("1573496359142-b8d87734a5a2"),
+      title: "Dr. N. Sowrirajan",
+      caption: "Staff Coordinator • Assistant Professor (Sr.G), Dept of EIE",
+      image: "/assets/staff_coordinators/sowrirajan.png",
     },
     {
-      title: "Mrs. S. Shanthi",
-      caption: "Staff Coordinator • Technical Arena Director",
-      image: unsplash("1580489944761-15a19d654956"),
-    },
-    {
-      title: "Mr. K. Shanmugam",
-      caption: "Staff Coordinator • Non-Technical Arena Director",
-      image: unsplash("1560250097-0b93528c311a"),
+      title: "Mr. B. Parameswaran",
+      caption: "Staff Coordinator • Assistant Professor (Sr.G), Dept of EIE",
+      image: "/assets/staff_coordinators/parameshwaran.png",
     },
   ];
 
@@ -57,19 +52,19 @@ export const CrewSection: React.FC<{ site: SiteConfig }> = ({ site }) => {
   // Subsection 2: Office Bearers (Student Executive Council)
   const officeBearerItems: FeatureItem[] = (site.organizers && site.organizers.length > 0)
     ? site.organizers.map((org, idx) => ({
-        id: `ob-${idx + 1}`,
-        label: org.role || "Executive Council",
-        image: org.image || defaultBearerImages[idx % defaultBearerImages.length],
-        description: org.name,
-      }))
+      id: `ob-${idx + 1}`,
+      label: org.role || "Executive Council",
+      image: org.image || defaultBearerImages[idx % defaultBearerImages.length],
+      description: org.name,
+    }))
     : [
-        {
-          id: "ob-1",
-          label: "President",
-          image: defaultBearerImages[0],
-          description: "Sanjay N",
-        },
-      ];
+      {
+        id: "ob-1",
+        label: "President",
+        image: defaultBearerImages[0],
+        description: "Sanjay N",
+      },
+    ];
 
   return (
     <section id="cast" className="py-14 bg-black/40 border-t border-white/5 scroll-mt-20">
@@ -125,7 +120,7 @@ export const CrewSection: React.FC<{ site: SiteConfig }> = ({ site }) => {
             </div>
             <div className="text-[11px] font-medium text-neutral-400 flex items-center gap-1.5 self-start sm:self-auto">
               <ShieldCheck className="w-4 h-4 text-amber-400" />
-              <span>Department of Electroincs & Instrumentation Engineering</span>
+              <span>Department of Electronics & Instrumentation Engineering</span>
             </div>
           </div>
 

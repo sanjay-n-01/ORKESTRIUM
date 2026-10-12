@@ -66,7 +66,7 @@ export default function ParallaxUnfurlingGallery({ images = CINEMA_IMAGES, scrol
   const colMedia = useMemo(() => {
     // If no images or empty array, fallback to default for animation testing
     const sourceImages = images && images.length > 0 ? images : CINEMA_IMAGES;
-    
+
     // Distribute images into 4 columns (cols 3 & 4 will be hidden on mobile)
     const col1Base = sourceImages.filter((_, i) => i % 4 === 0);
     const col2Base = sourceImages.filter((_, i) => i % 4 === 1);

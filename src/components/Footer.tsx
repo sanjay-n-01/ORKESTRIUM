@@ -103,7 +103,6 @@ export const Footer: React.FC<FooterProps> = ({ site, className, ...props }) => 
             <LinksGroup
               title="Cast & Crew"
               links={[
-                { title: "Faculty Patrons", href: "#staff-coordinators" },
                 { title: "Staff Coordinators", href: "#staff-coordinators" },
                 { title: "Office Bearers", href: "#office-bearers" },
               ]}

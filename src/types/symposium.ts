@@ -50,6 +50,7 @@ export interface ScheduleEpisode {
   duration: string;
   venue: string;
   desc: string;
+  icon?: string;
 }
 
 export interface SiteConfig {

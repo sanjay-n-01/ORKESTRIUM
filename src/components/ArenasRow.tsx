@@ -81,14 +81,14 @@ export const ArenasRow: React.FC<ArenasRowProps> = ({
                 "lg:col-span-2", // 5th
               ];
               const span = spanClasses[index % 5];
-              
+
               // Get an unsplash image for graphic based on event id (using generic tech/event images)
               const imageUrls = [
-                "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
-                "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80",
-                "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80",
-                "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&q=80",
-                "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80"
+                "/assets/posters/paper_fusion.jpeg",
+                "/assets/posters/clash_flix.jpeg",
+                "/assets/posters/beyond_limits.jpeg",
+                "/assets/posters/brandblitz.jpeg",
+                "/assets/posters/voyagex.jpeg"
               ];
               const originalIndex = events.findIndex(e => e.id === event.id);
               const imageUrl = imageUrls[Math.max(0, originalIndex) % 5];
@@ -104,9 +104,9 @@ export const ArenasRow: React.FC<ArenasRowProps> = ({
                   title={event.name}
                   description={event.tagline}
                   graphic={
-                    <div 
-                      className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-screen transition-transform duration-500 group-hover:scale-105" 
-                      style={{ backgroundImage: `url(${imageUrl})` }} 
+                    <div
+                      className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-screen transition-transform duration-500 group-hover:scale-105"
+                      style={{ backgroundImage: `url(${imageUrl})` }}
                     />
                   }
                   actions={
@@ -132,11 +132,10 @@ export const ArenasRow: React.FC<ArenasRowProps> = ({
                           onToggleBookmark(event.id);
                           onShowToast(inList ? "Removed from My List" : "✓ Added to My List");
                         }}
-                        className={`p-2 rounded border transition-all ${
-                          inList
-                            ? 'bg-[#E50914] text-white border-[#E50914]'
-                            : 'bg-white/10 text-white border-white/20 hover:bg-white hover:text-black'
-                        }`}
+                        className={`p-2 rounded border transition-all ${inList
+                          ? 'bg-[#E50914] text-white border-[#E50914]'
+                          : 'bg-white/10 text-white border-white/20 hover:bg-white hover:text-black'
+                          }`}
                         title="Bookmark Arena"
                         aria-label={inList ? `Remove ${event.name} from My List` : `Add ${event.name} to My List`}
                       >

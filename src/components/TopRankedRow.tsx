@@ -23,30 +23,23 @@ export const TopRankedRow: React.FC<TopRankedRowProps> = ({
 
   // We no longer need manual scroll since it's an auto-looping marquee
 
-  const getShapeContent = (index: number) => {
-    switch (index % 5) {
-      case 0:
-        return (
-          <div className="w-20 h-20 rounded-full bg-gradient-to-tr from-[#E50914] via-[#FF4D4D] to-amber-500 shadow-[0_0_35px_rgba(229,9,20,0.8)] animate-float-slow" />
-        );
-      case 1:
-        return (
-          <div className="w-20 h-20 rounded-full bg-gradient-to-tr from-cyan-500 via-blue-600 to-indigo-900 shadow-[0_0_35px_rgba(6,182,212,0.7)] animate-float-slow" />
-        );
-      case 2:
-        return (
-          <div className="w-18 h-18 bg-gradient-to-br from-amber-400 to-orange-600 rotate-45 shadow-[0_0_35px_rgba(245,158,11,0.8)] animate-rotate-slow" />
-        );
-      case 3:
-        return (
-          <div className="w-20 h-20 rounded-full border-4 border-dashed border-sky-400 shadow-[0_0_30px_rgba(56,189,248,0.7)] animate-rotate-slow" />
-        );
-      case 4:
-      default:
-        return (
-          <div className="w-18 h-18 bg-gradient-to-tr from-emerald-400 to-teal-700 rounded-xl rotate-12 shadow-[0_0_35px_rgba(16,185,129,0.8)] animate-float-slow" />
-        );
-    }
+  const EVENT_CARD_IMAGES: Record<string, string> = {
+    'paper-spark': '/assets/posters/Paperfusion_card.jpeg',
+    'brainiacs-battle': '/assets/posters/ClashFlix_card.jpeg',
+    'techno-connect': '/assets/posters/Beyond_limits_card.jpeg',
+    'techno-ads': '/assets/posters/Brandblitz_card.jpeg',
+    'techno-treasure': '/assets/posters/VoyageX_card.jpeg',
+  };
+
+  const getCardImage = (ev: SymposiumEvent) => {
+    if (EVENT_CARD_IMAGES[ev.id]) return EVENT_CARD_IMAGES[ev.id];
+    const n = ev.name.toLowerCase();
+    if (n.includes('paper')) return '/assets/posters/Paperfusion_card.jpeg';
+    if (n.includes('clash')) return '/assets/posters/ClashFlix_card.jpeg';
+    if (n.includes('beyond') || n.includes('limit')) return '/assets/posters/Beyond_limits_card.jpeg';
+    if (n.includes('brand')) return '/assets/posters/Brandblitz_card.jpeg';
+    if (n.includes('voyage')) return '/assets/posters/VoyageX_card.jpeg';
+    return ev.image || '/assets/posters/Paperfusion_card.jpeg';
   };
 
   return (
@@ -100,11 +93,16 @@ export const TopRankedRow: React.FC<TopRankedRowProps> = ({
                     onClick={() => onSelectEvent(event)}
                     className="relative z-10 ml-12 sm:ml-16 w-full bg-[#181818] border border-white/15 rounded-lg overflow-hidden shadow-xl shadow-black/80 hover:border-[#E50914] hover:shadow-[0_12px_35px_rgba(229,9,20,0.35)] transition-all duration-300 hover:-translate-y-1.5 cursor-pointer flex flex-col justify-between"
                   >
-                    <div className="relative h-40 bg-gradient-to-b from-[#1c1c1c] to-[#0e0e0e] flex items-center justify-center overflow-hidden">
-                      <span className="absolute top-2 left-2 z-20 text-[10px] font-black tracking-wider bg-[#E50914] text-white px-1.5 py-0.5 rounded">
+                    <div className="relative h-40 bg-[#121212] overflow-hidden">
+                      <img
+                        src={getCardImage(event)}
+                        alt={event.name}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover/card:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#181818] via-transparent to-black/30 pointer-events-none" />
+                      <span className="absolute top-2 left-2 z-20 text-[10px] font-black tracking-wider bg-[#E50914] text-white px-1.5 py-0.5 rounded shadow">
                         TOP {rank}
                       </span>
-                      {getShapeContent(idx)}
                     </div>
                     <div className="p-3.5 space-y-2 flex-1 flex flex-col justify-between bg-[#181818]">
                       <div>
@@ -186,11 +184,16 @@ export const TopRankedRow: React.FC<TopRankedRowProps> = ({
                     onClick={() => onSelectEvent(event)}
                     className="relative z-10 ml-12 sm:ml-16 w-full bg-[#181818] border border-white/15 rounded-lg overflow-hidden shadow-xl shadow-black/80 hover:border-[#E50914] hover:shadow-[0_12px_35px_rgba(229,9,20,0.35)] transition-all duration-300 hover:-translate-y-1.5 cursor-pointer flex flex-col justify-between"
                   >
-                    <div className="relative h-40 bg-gradient-to-b from-[#1c1c1c] to-[#0e0e0e] flex items-center justify-center overflow-hidden">
-                      <span className="absolute top-2 left-2 z-20 text-[10px] font-black tracking-wider bg-[#E50914] text-white px-1.5 py-0.5 rounded">
+                    <div className="relative h-40 bg-[#121212] overflow-hidden">
+                      <img
+                        src={getCardImage(event)}
+                        alt={event.name}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover/card:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#181818] via-transparent to-black/30 pointer-events-none" />
+                      <span className="absolute top-2 left-2 z-20 text-[10px] font-black tracking-wider bg-[#E50914] text-white px-1.5 py-0.5 rounded shadow">
                         TOP {rank}
                       </span>
-                      {getShapeContent(idx)}
                     </div>
                     <div className="p-3.5 space-y-2 flex-1 flex flex-col justify-between bg-[#181818]">
                       <div>
