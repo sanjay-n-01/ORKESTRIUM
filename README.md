@@ -143,7 +143,7 @@ For questions, registrations, or sponsor inquiries:
 
 ## Built with passion by:
 
-[Sanjay S](https://github.com/sanjay-n-01)
-[Sunanda V K](https://github.com/sunanda12-sun)
-[Sanjay Eshwaran P](https://github.com/sfmufasasanjay-art)
+[Sanjay S](https://github.com/sanjay-n-01),
+[Sunanda V K](https://github.com/sunanda12-sun),
+[Sanjay Eshwaran P](https://github.com/sfmufasasanjay-art),
 [Mathesh M](https://github.com/Mathesh08-pc)
