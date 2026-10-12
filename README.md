@@ -138,3 +138,12 @@ ORKESTRIUM/
 For questions, registrations, or sponsor inquiries:
 - **Email:** [srmvec.orkestrim2k26@gmail.com](mailto:srmvec.orkestrim2k26@gmail.com)
 - **Venue:** Department of Electronics and Instrumentation Engineering, SRM Valliammai Engineering College, Kattankulathur, Chengalpattu, Tamil Nadu, India.
+
+---
+
+## Built with passion by:
+
+[Sanjay S](https://github.com/sanjay-n-01)
+[Sunanda V K](https://github.com/sunanda12-sun)
+[Sanjay Eshwaran P](https://github.com/sfmufasasanjay-art)
+[Mathesh M](https://github.com/Mathesh08-pc)
